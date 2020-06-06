@@ -232,7 +232,16 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-success btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
+                <!-- Carousel Code End -->
             </div>
         </div>
 
@@ -410,6 +419,22 @@
         });
     </script>     -->
 
+    <!-- Carousel Pause/Play Code -->
+    <script>
+        $(document).ready(function(){
+            $('#mycarousel').carousel({ interval: 2000 });
+
+            // function to be executed when the pause button is clicked
+            $('#carousel-pause').click(function() {
+                $('#mycarousel').carousel('pause');
+            });
+
+            // function to be executed when the play button is clicked
+            $('#carousel-play').click(function () {
+                $('#mycarousel').carousel('cycle');
+            });
+        });
+    </script>
 </body>
 
 </html>
