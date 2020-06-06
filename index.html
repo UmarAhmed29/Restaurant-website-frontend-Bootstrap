@@ -32,10 +32,11 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu </a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact </a></li>
                 </ul>
-                <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                <span class="navbar-text" id="loginButton">
+                    <!-- <a data-toggle="modal" data-target="#loginModal" role="button">
                         <span class="fa fa-sign-in"></span> Login
-                    </a>
+                    </a> -->
+                    <a role="button"><span class="fa fa-sign-in"></span> Login </a>
                 </span>
             </div>
         </div>
@@ -183,9 +184,11 @@
                     data-toggle="tooltip" data-html="true"
                     title="Or Call us at <br><strong>987654321</strong>"
                     data-placement="bottom" href="#reserve_table"> Reserve Table </a> -->
-                    <a role="button" class="btn btn-warning btn-block nav-link"
+
+                    <!-- <a role="button" class="btn btn-warning btn-block nav-link"
                     data-toggle="modal" data-target="#reserveModal"
-                     href="#reserve_table"> Reserve Table </a>
+                     href="#reserve_table"> Reserve Table </a> -->
+                    <a role="button" class="btn btn-warning btn-block nav-link" id="reserveModalButton"> Reserve Table </a>
                 </div>
             </div>
         </div>
@@ -437,6 +440,16 @@
             // $('#carousel-play').click(function () {
             //     $('#mycarousel').carousel('cycle');
             // });
+
+            // function for opening the Reserve Modal
+            $("#reserveModalButton").click(function () {
+                $("#reserveModal").modal('show');
+            });
+
+            // function for oepning the Login Modal
+            $("#loginButton").click(function () {
+                $("#loginModal").modal('show');
+            });
         });
     </script>
 </body>
