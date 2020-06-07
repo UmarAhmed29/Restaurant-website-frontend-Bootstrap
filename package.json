@@ -19,11 +19,15 @@
   "author": "Umar Ahmed",
   "license": "ISC",
   "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "jit-grunt": "^0.10.0",
     "lite-server": "^2.3.0",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
     "parallelshell": "^3.0.2",
     "rimraf": "^3.0.2",
+    "time-grunt": "^2.0.0",
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
